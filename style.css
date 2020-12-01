@@ -2,8 +2,8 @@
 Theme Name: The7 - RedLotusLetter.com Child Theme
 Template: dt-the7
 Author: Dusty Sun
-Version: 1.2.5
-Updated: 2018-08-02
+Version: 1.2.6
+Updated: 2020-12-01
 */
 .flex-align-center {
   display: flex;
@@ -40,7 +40,7 @@ Updated: 2018-08-02
   animation: none;
 }
 #page {
-  top: 70px;
+  top: 50px;
 }
 .header-bar,
 .ph-wrap.with-logo,
@@ -62,8 +62,8 @@ Updated: 2018-08-02
   clear: both !important;
   line-height: 100% !important;
   width: 100% !important;
-  height: 70px !important;
-  max-height: 70px !important;
+  height: 50px !important;
+  max-height: 50px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,11 +105,16 @@ Updated: 2018-08-02
   line-height: 10px !important;
   width: 105%;
 }
+#header-custom-form .et_bloom_form_content .et_bloom_fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 #header-custom-form .et_bloom_form_content.et_bloom_2_fields.et_bloom_bottom_inline p.et_bloom_popup_input,
 #header-custom-form .et_bloom_form_content.et_bloom_2_fields.et_bloom_bottom_inline button {
   flex-basis: 0;
   flex: 1 1 28%;
-  margin-right: 14px !important;
+  margin-right: 0 !important;
   margin-bottom: 0 !important;
 }
 /* IE11 specific properties */
@@ -145,12 +150,13 @@ _:-ms-fullscreen, :root #header-custom-form .et_bloom_form_content.et_bloom_2_fi
   color: #fff;
   padding: 0;
   margin: 0;
+  font-family: 'QuickSand', Arial, Helvetica, sans-serif;
 }
 #header-custom-form .et_bloom_form_container_wrapper.clearfix.et_bloom_with_custom_fields {
   /* margin-bottom: 38px; */
 }
 #header-custom-form .et_bloom_form_content.et_bloom_2_fields.et_bloom_bottom_inline {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 #header-custom-form .et_bloom_form_container .et_bloom_form_content,
 #header-custom-form .et_bloom_inline_form .et_bloom_form_container,
@@ -166,7 +172,7 @@ _:-ms-fullscreen, :root #header-custom-form .et_bloom_form_content.et_bloom_2_fi
 #header-custom-form .et_bloom_header_outer {
   white-space: nowrap;
   padding-right: 4px;
-  margin-bottom: 6px;
+  margin-bottom: 0;
   /* min-width:308px; */
 }
 #header-custom-form .et_bloom_form_container .et_bloom_form_header {
@@ -176,7 +182,8 @@ _:-ms-fullscreen, :root #header-custom-form .et_bloom_form_content.et_bloom_2_fi
   width: auto;
 }
 #header-custom-form .et_bloom_form_header h2 {
-  font-size: 16px !important;
+  font-size: 18px !important;
+  font-family: 'QuickSand', Arial, Helvetica, sans-serif;
 }
 #header-custom-form .et_bloom_success_container.et_bloom_animate_success span.et_bloom_success_checkmark {
   top: 40px;
@@ -224,6 +231,7 @@ _:-ms-fullscreen, :root #header-custom-form .et_bloom_form_content.et_bloom_2_fi
     font-weight: 400;
     float: none;
     padding: 1px 6px !important;
+    font-family: 'QuickSand', Arial, Helvetica, sans-serif;
 }
 #header-custom-form .et_bloom_form_container h2.et_bloom_error_message {
   margin-bottom: 0 !important;
@@ -288,6 +296,17 @@ _:-ms-fullscreen, :root #header-custom-form .et_bloom_form_content.et_bloom_2_fi
 }
 
 @media only screen and ( max-width:990px ) {
+  #header-custom-form .et_bloom_form_content.et_bloom_2_fields.et_bloom_bottom_inline p.et_bloom_popup_input,
+  #header-custom-form .et_bloom_form_content.et_bloom_2_fields.et_bloom_bottom_inline button {
+    margin-right: 14px !important;
+  }
+  #header-custom-form .et_bloom_header_outer {
+    margin-left: 14px;
+    flex: 1 1 auto;
+  }
+  #header-custom-form .et_bloom_form_content.et_bloom_2_fields.et_bloom_bottom_inline {
+    flex: 1 1 88%;
+  }
   #header-custom-form {
     position: relative !important;
   }
@@ -333,6 +352,14 @@ _:-ms-fullscreen, :root #header-custom-form .et_bloom_form_content.et_bloom_2_fi
     margin-left: 0;
     margin-right: 0;
   }
+  #header-custom-form .et_bloom_header_outer { 
+    margin-left: 0;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+  #header-custom-form .et_bloom_form_content input { 
+    margin-bottom: 6px;
+  }
   #header-custom-form .et_bloom_form_container h2.et_bloom_error_message {
     margin-bottom: 10px !important;
     position: relative;
@@ -361,6 +388,7 @@ _:-ms-fullscreen, :root #header-custom-form .et_bloom_form_content.et_bloom_2_fi
   }
   #header-custom-form .et_bloom_form_content.et_bloom_2_fields.et_bloom_bottom_inline button {
     margin-right: 6px !important;
+    margin-bottom: 6px !important;
   }
   #header-custom-form .et_bloom_form_content.et_bloom_2_fields.et_bloom_bottom_inline p.et_bloom_custom_field.et_bloom_fullwidth_field {
     position: relative;
